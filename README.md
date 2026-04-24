@@ -1,1 +1,1 @@
-# fuzzing-hackathon-2025.github.io
+# fuzzing-hackathon-2026.github.io

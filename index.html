@@ -10,19 +10,6 @@
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Initialize DataTable for Benchmarking Submissions
-            $('#myTable').DataTable();
-
-            // Initialize DataTable for Leaderboard with default sorting and custom page length options
-            $('#leaderboardTable').DataTable({
-                "order": [[2, 'desc']],  // Default sorting by the third column ("Found") in descending order
-                "lengthMenu": [10, 25, 50, 75, 100],  // Custom page length options including '5'
-                "pageLength": 50  // Default number of rows to display
-            });
-        });
-    </script>
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
@@ -31,19 +18,17 @@
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="reports">Reports</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="build-logs">Logs</a>
             </li>
         </ul>
     </nav>
     <div class="d-flex justify-content-center align-items-center vh-10 flex-column">
         <main>
             <br>
-            <h1>Fuzzing Competition: Summer School 2025</h1>
+            <h1>Fuzzing Competition: Summer School 2026</h1>
             <br>
-            <h4>  Template Repository:  <a href="https://github.com/nus-fuzzing-hackathon-2025/template_fuzzer">https://github.com/nus-fuzzing-hackathon-2025/template_fuzzer</a></h4>
+            <h4>  Template Repository:  <a href="https://github.com/nus-fuzzing-hackathon-2026/template_fuzzer">https://github.com/nus-fuzzing-hackathon-2026/template_fuzzer</a></h4>
             <div class="container mt-5">
                 <h2 class="mb-4">Leaderboard</h2>
                 <table class="table table-bordered table-striped table-hover" id="leaderboardTable">
@@ -52,63 +37,64 @@
                             <th scope="col">Rank</th>
                             <th scope="col">Team</th>
                             <th scope="col">Score</th>
+                            <th scope="col">Parser</th>
+                            <th scope="col">SQL Logic</th>
+                            <th scope="col">Stateful</th>
                         </tr>
                     </thead>
-                    <tbody>
-                    <!-- START_AUTOGEN_TABLE_ROWS -->
-<tr>
-    <td>1</td>
-    <td>submission_01</td>
-    <td>100</td>
-</tr>
-<tr>
-    <td>2</td>
-    <td>submission_02</td>
-    <td>200</td>
-</tr>
-<tr>
-    <td>3</td>
-    <td>submission_03</td>
-    <td>150</td>
-</tr>
-<tr>
-    <td>4</td>
-    <td>submission_04</td>
-    <td>150</td>
-</tr>
-<tr>
-    <td>5</td>
-    <td>submission_05</td>
-    <td>150</td>
-</tr>
-<!-- END_AUTOGEN_TABLE_ROWS -->
+                    <tbody id="student_fuzzer_records">
                     </tbody>
                 </table>
-            </div>
-            <div class="container mt-5">
-                <h2 class="mb-4">Benchmarking Submissions</h2>
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped table-hover" id="myTable">
-                        <thead class="thead-dark">
-                            <tr class="text-center">
-                                <th>Owner</th>
-                                <th>Repo</th>
-                                <th>Release Name</th>
-                                <th>Release Date</th>
-                                <th>Image Built</th>
-                                <th>Running</th>
-                                <th>Finished</th>
-                                <th>Report Ready</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-                            
-                        </tbody>
-                    </table>
-                </div>
             </div>
         </main>
     </div>
 </body>
+<script>
+    const leaderboardTable = $('#leaderboardTable').DataTable({
+        "order": [[2, 'desc']],
+        "lengthMenu": [25, 50, 75, 100],
+        "pageLength": 30,
+        "searching": false,
+        "ordering": true,
+        "paging": false,
+        "info": false,
+        "columns": [
+            {
+                "data": null,
+                "render": function (data, type, row, meta) {
+                    return meta.row + meta.settings._iDisplayStart + 1;
+                }
+            },
+            { "data": "team", "className": "text-center" },
+            { "data": "score", "className": "text-center" },
+            { "data": "basic", "className": "text-center" },
+            { "data": "medium", "className": "text-center" },
+            { "data": "advanced", "className": "text-center" }
+        ]
+    });
+
+    const JSON_URL = "./eval_summary.json";
+    function sumOfLargestTwo(a, b, c) {
+        return a + b + c - Math.min(a, b, c);
+    }
+
+    async function fetchAndRenderData() {
+        try {
+            const response = await fetch(JSON_URL);
+            const data = await response.json();
+            const rowData = Object.entries(data).map(([submissionId, [score, n_basic, n_medium, n_advanced]]) => ({
+                "team": submissionId.replace(/^hackathon-/, ''),
+                "score": sumOfLargestTwo(n_basic, n_medium, n_advanced),
+                "basic": n_basic,
+                "medium": n_medium,
+                "advanced": n_advanced
+            }));
+            leaderboardTable.rows.add(rowData).draw();
+        } catch (error) {
+            console.error("Error fetching or rendering data:", error);
+        }
+    }
+
+    fetchAndRenderData();
+</script>
 </html>
