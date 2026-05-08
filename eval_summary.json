@@ -5,16 +5,16 @@
         16,
         10
     ],
-    "hackathon-test-3-v1": [
-        7,
-        4,
-        1,
-        2
-    ],
     "hackathon-test2-v100": [
         6,
         1,
         1,
         4
+    ],
+    "hackathon-test-3-unknown": [
+        4,
+        1,
+        1,
+        2
     ]
 }
