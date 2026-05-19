@@ -1,14 +1,14 @@
 {
-    "hackathon-zx-test-V1": [
-        42,
-        11,
-        19,
-        12
-    ],
     "hackathon-yc-test-v4": [
         37,
         7,
         17,
         13
+    ],
+    "hackathon-zx-test-v2": [
+        29,
+        11,
+        12,
+        6
     ]
 }
