@@ -104,6 +104,8 @@
             var $rankCell = $(rowNode).find('td:first');
             if (rank <= 2) {
                 $rankCell.html('<span style="font-size: 28px;">&#127942;</span> ' + rank);
+            } else {
+                $rankCell.html('<span style="font-size: 28px; visibility: hidden;">&#127942;</span> ' + rank);
             }
         });
     });
