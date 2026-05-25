@@ -84,7 +84,7 @@
             const response = await fetch(JSON_URL);
             const data = await response.json();
             const rowData = Object.entries(data).map(([submissionId, [score, n_basic, n_medium, n_advanced]]) => ({
-                "team": submissionId.replace(/^hackathon-/, ''),
+                "team": submissionId.replace(/^hackathon26-/, ''),
                 "score": sumOfLargestTwo(n_basic, n_medium, n_advanced),
                 "basic": n_basic,
                 "medium": n_medium,
