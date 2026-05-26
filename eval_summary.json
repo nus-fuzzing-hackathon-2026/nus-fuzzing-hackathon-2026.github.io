@@ -53,17 +53,17 @@
         0,
         3
     ],
-    "hackathon26-squirtlefuzz-v6": [
-        14,
-        9,
-        5,
-        0
-    ],
     "hackathon26-fuzzywuzzy-V8": [
         13,
         10,
         0,
         3
+    ],
+    "hackathon26-squirtlefuzz-v7": [
+        12,
+        9,
+        3,
+        0
     ],
     "hackathon26-select-from-bugs-v1": [
         10,
