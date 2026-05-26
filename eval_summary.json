@@ -23,12 +23,6 @@
         0,
         12
     ],
-    "hackathon26-fuzzywuzzy-V4": [
-        12,
-        10,
-        0,
-        2
-    ],
     "hackathon26-foobar-v1": [
         11,
         8,
@@ -44,6 +38,12 @@
     "hackathon26-fuzzy-meowmeows-v1": [
         9,
         6,
+        0,
+        3
+    ],
+    "hackathon26-fuzzywuzzy-V5": [
+        8,
+        5,
         0,
         3
     ],
