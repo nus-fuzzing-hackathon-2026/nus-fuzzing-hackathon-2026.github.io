@@ -35,6 +35,12 @@
         0,
         3
     ],
+    "hackathon26-fuzzywuzzy-V9": [
+        12,
+        9,
+        0,
+        3
+    ],
     "hackathon26-buffer-overflow-n-bratwurst-v1": [
         11,
         8,
@@ -58,12 +64,6 @@
         7,
         0,
         2
-    ],
-    "hackathon26-fuzzywuzzy-V7": [
-        7,
-        4,
-        0,
-        3
     ],
     "hackathon26-snellejelle-v0": [
         6,
