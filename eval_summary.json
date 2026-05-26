@@ -5,6 +5,12 @@
         14,
         13
     ],
+    "hackathon26-uaecan-v2": [
+        15,
+        3,
+        0,
+        12
+    ],
     "hackathon26-fuzzywuzzy-v2": [
         11,
         8,
@@ -16,11 +22,5 @@
         2,
         0,
         3
-    ],
-    "hackathon26-uaecan-v1": [
-        5,
-        3,
-        0,
-        2
     ]
 }
