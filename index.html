@@ -104,12 +104,14 @@
     fetchAndRenderData();
 
     leaderboardTable.on('draw', function () {
-        leaderboardTable.rows({ order: 'current' }).every(function (rowIdx) {
-            var rowNode = this.node();
-            var rank = rowIdx + 1;
-            var $rankCell = $(rowNode).find('td:first');
-            if (rank <= 2) {
-                $rankCell.html('<span style="font-size: 28px;">&#127942;</span> ' + rank);
+        var displayIdx = 0;
+        leaderboardTable.rows({ order: 'current' }).every(function () {
+            displayIdx++;
+            var $rankCell = $(this.node()).find('td:first');
+            if (displayIdx <= 2) {
+                $rankCell.html('<span style="font-size: 28px;">&#127942;</span> ' + displayIdx);
+            } else {
+                $rankCell.html(displayIdx);
             }
         });
     });
