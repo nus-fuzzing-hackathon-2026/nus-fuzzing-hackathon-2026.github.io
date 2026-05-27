@@ -29,6 +29,12 @@
         8,
         13
     ],
+    "hackathon26-fuzzilli-v1": [
+        31,
+        11,
+        17,
+        3
+    ],
     "hackathon26-kubectl-v1": [
         30,
         7,
@@ -62,12 +68,6 @@
     "hackathon26-foobar-v2": [
         15,
         12,
-        0,
-        3
-    ],
-    "hackathon26-fuzzilli-v0": [
-        14,
-        11,
         0,
         3
     ],
