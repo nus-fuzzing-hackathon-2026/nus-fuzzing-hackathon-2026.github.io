@@ -23,12 +23,6 @@
         10,
         15
     ],
-    "hackathon26-foobar-v5": [
-        38,
-        13,
-        16,
-        9
-    ],
     "hackathon26-buffer-overflow-n-bratwurst-v7": [
         32,
         15,
@@ -40,6 +34,12 @@
         11,
         17,
         3
+    ],
+    "hackathon26-foobar-v6": [
+        31,
+        13,
+        7,
+        11
     ],
     "hackathon26-kubectl-v1": [
         30,
