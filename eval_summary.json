@@ -83,6 +83,12 @@
         19,
         0
     ],
+    "hackathon26-fuzzqa-v2": [
+        19,
+        9,
+        0,
+        10
+    ],
     "hackathon26-hoho-v3": [
         16,
         13,
@@ -94,12 +100,6 @@
         10,
         0,
         3
-    ],
-    "hackathon26-fuzzqa-v1": [
-        13,
-        5,
-        0,
-        8
     ],
     "hackathon26-gettin-fuzzy-wit-it-v5": [
         8,
