@@ -29,6 +29,12 @@
         14,
         12
     ],
+    "hackathon26-buffer-overflow-n-bratwurst-v9": [
+        36,
+        16,
+        5,
+        15
+    ],
     "hackathon26-kubectl-v2": [
         35,
         12,
@@ -40,12 +46,6 @@
         15,
         7,
         11
-    ],
-    "hackathon26-buffer-overflow-n-bratwurst-v8": [
-        32,
-        16,
-        4,
-        12
     ],
     "hackathon26-uaecan-v15": [
         27,
