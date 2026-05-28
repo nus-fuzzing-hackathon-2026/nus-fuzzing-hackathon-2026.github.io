@@ -23,12 +23,6 @@
         19,
         10
     ],
-    "hackathon26-hoho-v13": [
-        39,
-        16,
-        20,
-        3
-    ],
     "hackathon26-buffer-overflow-n-bratwurst-v13": [
         37,
         15,
@@ -94,6 +88,12 @@
         13,
         3,
         3
+    ],
+    "hackathon26-hoho-v14": [
+        18,
+        16,
+        0,
+        2
     ],
     "hackathon26-fuzzywuzzy-V10": [
         13,
