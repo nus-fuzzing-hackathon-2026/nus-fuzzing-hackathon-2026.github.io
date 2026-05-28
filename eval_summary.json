@@ -41,6 +41,12 @@
         19,
         4
     ],
+    "hackathon26-fuzzilli-v5": [
+        34,
+        13,
+        18,
+        3
+    ],
     "hackathon26-squirtlefuzz-v12": [
         33,
         15,
@@ -52,12 +58,6 @@
         10,
         4,
         13
-    ],
-    "hackathon26-fuzzilli-v4": [
-        26,
-        13,
-        10,
-        3
     ],
     "hackathon26-snellejelle-v2": [
         22,
