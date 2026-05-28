@@ -35,17 +35,17 @@
         18,
         3
     ],
-    "hackathon26-squirtlefuzz-v9": [
-        33,
-        14,
-        9,
-        10
-    ],
     "hackathon26-buffer-overflow-n-bratwurst-v8": [
         32,
         16,
         4,
         12
+    ],
+    "hackathon26-squirtlefuzz-v10": [
+        31,
+        14,
+        7,
+        10
     ],
     "hackathon26-kubectl-v1": [
         30,
