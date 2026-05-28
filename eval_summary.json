@@ -83,17 +83,17 @@
         7,
         0
     ],
+    "hackathon26-fuzzqa-v4": [
+        20,
+        9,
+        0,
+        11
+    ],
     "hackathon26-select-from-bugs-v7": [
         19,
         13,
         3,
         3
-    ],
-    "hackathon26-fuzzqa-v3": [
-        19,
-        9,
-        0,
-        10
     ],
     "hackathon26-fuzzywuzzy-V10": [
         13,
