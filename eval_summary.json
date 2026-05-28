@@ -35,12 +35,6 @@
         19,
         4
     ],
-    "hackathon26-fuzzilli-v3": [
-        34,
-        13,
-        18,
-        3
-    ],
     "hackathon26-buffer-overflow-n-bratwurst-v8": [
         32,
         16,
@@ -52,6 +46,12 @@
         14,
         7,
         10
+    ],
+    "hackathon26-fuzzilli-v4": [
+        26,
+        13,
+        10,
+        3
     ],
     "hackathon26-uaecan-v12": [
         24,
