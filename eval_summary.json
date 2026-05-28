@@ -41,12 +41,6 @@
         8,
         14
     ],
-    "hackathon26-fuzzilli-v5": [
-        34,
-        13,
-        18,
-        3
-    ],
     "hackathon26-meaww-v6": [
         34,
         9,
@@ -58,6 +52,12 @@
         10,
         14,
         10
+    ],
+    "hackathon26-fuzzilli-v6": [
+        34,
+        13,
+        18,
+        3
     ],
     "hackathon26-dungeon-v14": [
         30,
