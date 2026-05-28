@@ -47,6 +47,12 @@
         19,
         12
     ],
+    "hackathon26-hoho-v0": [
+        39,
+        16,
+        20,
+        3
+    ],
     "hackathon26-buffer-overflow-n-bratwurst-v14": [
         38,
         16,
@@ -94,12 +100,6 @@
         2,
         16,
         3
-    ],
-    "hackathon26-hoho-v17": [
-        20,
-        16,
-        0,
-        4
     ],
     "hackathon26-select-from-bugs-v10": [
         19,
