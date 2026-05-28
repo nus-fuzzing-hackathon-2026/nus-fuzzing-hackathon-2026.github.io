@@ -83,12 +83,6 @@
         2,
         12
     ],
-    "hackathon26-squirtlefuzz-v15": [
-        21,
-        14,
-        7,
-        0
-    ],
     "hackathon26-snellejelle-v3": [
         21,
         2,
@@ -142,5 +136,11 @@
         2,
         0,
         3
+    ],
+    "hackathon26-squirtlefuzz-v16": [
+        2,
+        0,
+        2,
+        0
     ]
 }
