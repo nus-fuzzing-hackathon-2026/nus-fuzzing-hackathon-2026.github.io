@@ -71,17 +71,17 @@
         17,
         11
     ],
-    "hackathon26-fuzzqa-v6": [
-        23,
-        8,
-        2,
-        13
-    ],
     "hackathon26-select-from-bugs-v9": [
         22,
         16,
         3,
         3
+    ],
+    "hackathon26-fuzzqa-v7": [
+        22,
+        8,
+        2,
+        12
     ],
     "hackathon26-squirtlefuzz-v15": [
         21,
