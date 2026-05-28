@@ -104,11 +104,16 @@
     fetchAndRenderData();
 
     leaderboardTable.on('draw', function () {
+        var scores = [];
+        leaderboardTable.rows({ order: 'current' }).every(function () {
+            scores.push(this.data().score);
+        });
+        var topScores = [...new Set(scores)].sort(function(a,b){return b-a;}).slice(0, 2);
         var displayIdx = 0;
         leaderboardTable.rows({ order: 'current' }).every(function () {
             displayIdx++;
             var $rankCell = $(this.node()).find('td:first');
-            if (displayIdx <= 2) {
+            if (topScores.indexOf(this.data().score) >= 0) {
                 $rankCell.html('<span style="font-size: 28px;">&#127942;</span> ' + displayIdx);
             } else {
                 $rankCell.html(displayIdx);
