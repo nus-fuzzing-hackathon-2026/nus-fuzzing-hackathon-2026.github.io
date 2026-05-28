@@ -77,6 +77,12 @@
         10,
         7
     ],
+    "hackathon26-fuzzbuzz-v2": [
+        27,
+        5,
+        19,
+        3
+    ],
     "hackathon26-fuzzqa-v7": [
         22,
         8,
@@ -110,12 +116,6 @@
     "hackathon26-gettin-fuzzy-wit-it-b8m5a4": [
         13,
         10,
-        0,
-        3
-    ],
-    "hackathon26-fuzzbuzz-v1": [
-        9,
-        6,
         0,
         3
     ],
