@@ -53,12 +53,6 @@
         9,
         13
     ],
-    "hackathon26-sologuy-v2": [
-        36,
-        5,
-        19,
-        12
-    ],
     "hackathon26-fuzzilli-v8": [
         35,
         13,
@@ -70,6 +64,12 @@
         14,
         10,
         7
+    ],
+    "hackathon26-sologuy-v3": [
+        31,
+        3,
+        17,
+        11
     ],
     "hackathon26-fuzzqa-v6": [
         23,
