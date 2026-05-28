@@ -47,12 +47,6 @@
         14,
         10
     ],
-    "hackathon26-squirtlefuzz-v13": [
-        33,
-        15,
-        7,
-        11
-    ],
     "hackathon26-dungeon-v10": [
         31,
         10,
@@ -70,6 +64,12 @@
         3,
         16,
         3
+    ],
+    "hackathon26-squirtlefuzz-v14": [
+        22,
+        15,
+        7,
+        0
     ],
     "hackathon26-select-from-bugs-v7": [
         19,
