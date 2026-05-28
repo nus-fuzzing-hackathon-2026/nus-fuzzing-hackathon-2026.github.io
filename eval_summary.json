@@ -35,12 +35,6 @@
         8,
         15
     ],
-    "hackathon26-foobar-v9": [
-        37,
-        11,
-        14,
-        12
-    ],
     "hackathon26-fuzzilli-v5": [
         34,
         13,
@@ -52,6 +46,12 @@
         9,
         17,
         8
+    ],
+    "hackathon26-foobar-v10": [
+        34,
+        10,
+        14,
+        10
     ],
     "hackathon26-squirtlefuzz-v13": [
         33,
